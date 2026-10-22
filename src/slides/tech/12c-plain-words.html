@@ -3,24 +3,33 @@
   <h2 class="h1 abs" style="left:100px;top:152px">Amito explains in plain words</h2>
   <p class="body abs" style="left:100px;top:262px;width:1720px">Forensic tools answer in codes. Amito turns every result into sentences anyone can follow, and the person can always ask why.</p>
 
-  <div class="abs" style="left:100px;top:360px;width:720px;box-sizing:border-box;padding:26px 32px;border-radius:24px;background:var(--inverse);color:var(--on-inverse);box-shadow:var(--shadow-card)">
+  <div class="abs" style="left:100px;top:340px;width:720px;height:410px;box-sizing:border-box;padding:22px 0 22px 26px;border-radius:24px;background:var(--inverse);color:var(--on-inverse);box-shadow:var(--shadow-card);overflow:hidden">
     <span class="label" style="color:var(--on-inverse);opacity:.7">What the C2PA validator returns</span>
-    <div style="margin-top:14px;font:500 22px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace">
-      <div><span style="opacity:.6">signer</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Black Forest Labs Inc.</div>
-      <div><span style="opacity:.6">source</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trainedAlgorithmicMedia</div>
-      <div><span style="opacity:.6">failure</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;signingCredential.untrusted</div>
-      <div><span style="opacity:.6">failure</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;claimSignature.mismatch</div>
-    </div>
+    <pre style="margin:12px 0 0;font:400 14.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre;overflow:hidden;opacity:.92;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)">{
+  "active_manifest": "urn:uuid:851b30d6-af63-460c-967a-52b40e4cdb0b",
+  "manifests": { "urn:uuid:851b30d6-af63-460c-967a-52b40e4cdb0b": {
+    "claim_generator": "Black_Forest_Labs_API c2pa-rs/0.32.7",
+    "format": "image/png", "instance_id": "xmp:iid:38b01ca6-326b-45da-a9e6-935a806d9390",
+    "assertions": [ { "label": "c2pa.actions.v2", "data": { "actions": [ {
+        "action": "c2pa.created", "softwareAgent": "Flux.1",
+        "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia" } ] } },
+      { "label": "c2pa.ai_generated_content", "data": { "model": "Flux.1", "ai_generated": true } }, ... ],
+    "signature_info": { "alg": "Ps256", "issuer": "Black Forest Labs Inc.",
+      "cert_serial_number": "22610866767849886626509893098", "time": "2024-11-20T12:36:28+00:00" } } },
+  "validation_status": [
+    { "code": "signingCredential.untrusted", "url": "self#jumbf=/c2pa/urn:uuid:851b30d6-af63-460c-967a-52b40e4cdb0b/c2pa.signature", "explanation": "signing certificate untrusted" },
+    { "code": "claimSignature.mismatch", "url": "self#jumbf=/c2pa/urn:uuid:851b30d6-af63-460c-967a-52b40e4cdb0b/c2pa.signature", "explanation": "claim signature is not valid" } ]
+}</pre>
   </div>
 
-  <div class="abs card" style="left:100px;top:640px;width:720px;padding:24px 30px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px">
+  <div class="abs card" style="left:100px;top:775px;width:720px;padding:20px 28px;box-sizing:border-box;display:flex;flex-direction:column;gap:8px">
     <span class="label" style="color:var(--primary)">Every check speaks this way</span>
-    <p class="small" style="display:flex;gap:12px;font-size:20px;color:var(--ink)"><i style="flex:none;width:14px;height:14px;margin-top:7px;border-radius:9999px;background:var(--source)"></i>No Content Credentials found. Most images online have none, so this proves nothing either way.</p>
-    <p class="small" style="display:flex;gap:12px;font-size:20px;color:var(--ink)"><i style="flex:none;width:14px;height:14px;margin-top:7px;border-radius:9999px;background:var(--source)"></i>No Google AI watermark detected. Other AI tools don't use SynthID.</p>
-    <p class="small" style="display:flex;gap:12px;font-size:20px;color:var(--ink)"><i style="flex:none;width:14px;height:14px;margin-top:7px;border-radius:9999px;background:var(--content)"></i>Modern AI images can slip past detectors, so this is a clue, never proof of a real photo.</p>
+    <p class="small" style="display:flex;gap:12px;font-size:18px;color:var(--ink)"><i style="flex:none;width:14px;height:14px;margin-top:7px;border-radius:9999px;background:var(--source)"></i>No Content Credentials found. Most images online have none, so this proves nothing either way.</p>
+    <p class="small" style="display:flex;gap:12px;font-size:18px;color:var(--ink)"><i style="flex:none;width:14px;height:14px;margin-top:7px;border-radius:9999px;background:var(--source)"></i>No Google AI watermark detected. Other AI tools don't use SynthID.</p>
+    <p class="small" style="display:flex;gap:12px;font-size:18px;color:var(--ink)"><i style="flex:none;width:14px;height:14px;margin-top:7px;border-radius:9999px;background:var(--content)"></i>Modern AI images can slip past detectors, so this is a clue, never proof of a real photo.</p>
   </div>
 
-  <div class="chat" style="left:880px;top:360px;width:940px;height:620px">
+  <div class="chat" style="left:880px;top:340px;width:940px;height:650px">
     <header><img src="media/amito/home-waving.webp" alt=""><div><b>Amito</b><br><span>Web chat</span></div></header>
     <div class="msgs" style="padding:22px;gap:16px">
       <div class="msg u" style="font-size:21px;max-width:640px">A friend sent me this on WhatsApp, I'm not sure where it comes from.</div>
@@ -32,7 +41,7 @@
 
   <p class="src">Source. Amito web chat and its C2PA check, run on an image made with Flux.1, 22 Oct 2026.</p>
   <aside class="notes"><ul>
-    <li>A C2PA validator answers in codes. signingCredential.untrusted, claimSignature.mismatch, trainedAlgorithmicMedia. Correct, and meaningless to most people.</li>
+    <li>This is what a C2PA validator returns for the image, an excerpt of the real manifest. URNs, assertion labels, a certificate serial number and two failure codes, signingCredential.untrusted and claimSignature.mismatch. Correct, and meaningless to most people.</li>
     <li>Amito reads the same result and says it in one sentence. The credentials say an AI tool made it, and the signer isn't verified.</li>
     <li>Beat 2. The person can ask what that means, in their own words, and Amito explains the trust list and the edit after signing. These are Amito's real replies, from a run on an image made with Flux.1.</li>
     <li>Every check works this way. Missing credentials, the SynthID watermark, the pixel detectors. Each result comes with what it does and doesn't prove, so a missing label is never read as proof that a photo is real.</li>
