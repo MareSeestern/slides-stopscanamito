@@ -3,22 +3,27 @@
   <h2 class="h1 abs" style="left:100px;top:152px">Bring your own model</h2>
   <p class="body abs" style="left:100px;top:262px;width:1500px">Whoever runs Amito connects the AI model they prefer with their own API key. One setting switches it.</p>
 
-  <div class="abs card" style="left:100px;top:370px;width:520px;height:240px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px">
-    <span class="label" style="color:var(--primary)">Your OpenAI key</span>
-    <b class="h3" style="font-size:34px">OpenAI</b>
+  <div class="abs card" style="left:100px;top:370px;width:547px;height:240px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px">
+    <div style="display:flex;align-items:center;gap:20px">
+      <span style="flex:none;width:76px;height:76px;border-radius:20px;border:var(--hair);background:var(--white);display:grid;place-items:center;box-shadow:var(--shadow-soft)"><img src="media/logos/openai.png" alt="OpenAI" style="width:48px;height:48px"></span>
+      <div style="display:flex;flex-direction:column;gap:6px"><span class="label" style="color:var(--primary)">Your OpenAI key</span><b class="h3" style="font-size:34px">OpenAI</b></div>
+    </div>
     <p class="small" style="color:var(--ink)">GPT models, billed to your own OpenAI account.</p>
   </div>
-  <div class="abs card" style="left:660px;top:370px;width:520px;height:240px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px">
-    <span class="label" style="color:var(--primary)">Your Anthropic key</span>
-    <b class="h3" style="font-size:34px">Claude</b>
+  <div class="abs card" style="left:687px;top:370px;width:547px;height:240px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px">
+    <div style="display:flex;align-items:center;gap:20px">
+      <span style="flex:none;width:76px;height:76px;border-radius:20px;border:var(--hair);background:var(--white);display:grid;place-items:center;box-shadow:var(--shadow-soft)"><img src="media/logos/claude.png" alt="Claude" style="width:48px;height:48px"></span>
+      <div style="display:flex;flex-direction:column;gap:6px"><span class="label" style="color:var(--primary)">Your Anthropic key</span><b class="h3" style="font-size:34px">Claude</b></div>
+    </div>
     <p class="small" style="color:var(--ink)">Claude models, billed to your own Anthropic account.</p>
   </div>
-  <div class="abs card" style="left:1220px;top:370px;width:600px;height:240px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px;border:3px solid var(--primary)">
-    <span class="label" style="color:var(--primary)">No key needed</span>
-    <b class="h3" style="font-size:34px">A local model</b>
-    <p class="small" style="color:var(--ink)">An open model such as Mistral Small runs with Ollama on the organisation's own computer, so images need not leave it.</p>
+  <div class="abs card" style="left:1274px;top:370px;width:546px;height:240px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px">
+    <div style="display:flex;align-items:center;gap:20px">
+      <span style="flex:none;width:76px;height:76px;border-radius:20px;border:var(--hair);background:var(--white);display:grid;place-items:center;box-shadow:var(--shadow-soft)"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3 20 3"/><path d="m16 7 3 3"/><path d="m18.5 4.5 2 2"/></svg></span>
+      <div style="display:flex;flex-direction:column;gap:6px"><span class="label" style="color:var(--primary)">Private</span><b class="h3" style="font-size:34px">A local model</b></div>
+    </div>
+    <p class="small" style="color:var(--ink)">An open model runs with Ollama on the organisation's own computer. No key, and images need not leave it.</p>
   </div>
-
   <div class="abs" style="left:100px;top:660px;width:700px;height:200px;box-sizing:border-box;padding:30px 36px;border-radius:24px;background:var(--inverse);color:var(--on-inverse);font:500 26px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;box-shadow:var(--shadow-card)">
     <div>LLM_PROVIDER=claude</div>
     <div>ANTHROPIC_API_KEY=<span style="opacity:.6">your own key</span></div>
