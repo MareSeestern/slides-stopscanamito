@@ -37,6 +37,8 @@ export function createDeck({ viewport, stage, pile, layouts, ui }) {
     s.querySelectorAll('[data-out]').forEach(e => e.classList.toggle('gone', b >= +e.dataset.out));
     s.querySelectorAll('[data-only]').forEach(e => e.classList.toggle('off', !e.dataset.only.split(',').map(Number).includes(b)));
     s.querySelectorAll('.pill[data-k]').forEach(p => { const kk = +p.dataset.k; p.classList.toggle('now', kk === b); p.classList.toggle('past', kk < b); });
+    // A slide's video[data-autoplay] plays while the slide is on and pauses when it leaves
+    slides.forEach((sl, j) => sl.querySelectorAll('video[data-autoplay]').forEach(v => { if (j === i) v.play().catch(() => {}); else v.pause(); }));
     const lay = layouts[s.dataset.id];
     pile.apply(lay ? lay(b) : {});
     cur = k;
@@ -106,7 +108,7 @@ export function createDeck({ viewport, stage, pile, layouts, ui }) {
     wake();
   });
   stage.addEventListener('click', e => {
-    if (e.target.closest('a, button')) return;
+    if (e.target.closest('a, button, video')) return;
     const r = stage.getBoundingClientRect();
     go(e.clientX - r.left < r.width * .3 ? cur - 1 : cur + 1);
   });

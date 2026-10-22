@@ -1,6 +1,39 @@
-<section class="slide" data-id="tech" data-label="Bring your own keys">
+<section class="slide" data-id="tech" data-label="Bring your own model">
   <p class="eyebrow abs" style="left:100px;top:110px;color:var(--primary)">Amito toolkit · tech team</p>
-  <h2 class="h1 abs" style="left:100px;top:152px">Bring your own keys</h2>
-  <div class="techbox"><span class="label">Tech team content</span><p class="body">Vendor partnerships that let users connect their own keys, and how Amito shows results when two vendors disagree.</p></div>
-  <aside class="notes"><ul><li>Placeholder for the tech group.</li></ul></aside>
+  <h2 class="h1 abs" style="left:100px;top:152px">Bring your own model</h2>
+  <p class="body abs" style="left:100px;top:262px;width:1500px">Whoever runs Amito connects the AI model they prefer with their own API key. One setting switches it.</p>
+
+  <div class="abs card" style="left:100px;top:370px;width:520px;height:240px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px">
+    <span class="label" style="color:var(--primary)">Your OpenAI key</span>
+    <b class="h3" style="font-size:34px">OpenAI</b>
+    <p class="small" style="color:var(--ink)">GPT models, billed to your own OpenAI account.</p>
+  </div>
+  <div class="abs card" style="left:660px;top:370px;width:520px;height:240px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px">
+    <span class="label" style="color:var(--primary)">Your Anthropic key</span>
+    <b class="h3" style="font-size:34px">Claude</b>
+    <p class="small" style="color:var(--ink)">Claude models, billed to your own Anthropic account.</p>
+  </div>
+  <div class="abs card" style="left:1220px;top:370px;width:600px;height:240px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px;border:3px solid var(--primary)">
+    <span class="label" style="color:var(--primary)">No key needed</span>
+    <b class="h3" style="font-size:34px">A local model</b>
+    <p class="small" style="color:var(--ink)">An open model such as Mistral Small runs with Ollama on the organisation's own computer, so images need not leave it.</p>
+  </div>
+
+  <div class="abs" style="left:100px;top:660px;width:700px;height:200px;box-sizing:border-box;padding:30px 36px;border-radius:24px;background:var(--inverse);color:var(--on-inverse);font:500 26px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;box-shadow:var(--shadow-card)">
+    <div>LLM_PROVIDER=claude</div>
+    <div>ANTHROPIC_API_KEY=<span style="opacity:.6">your own key</span></div>
+    <div>CLAUDE_MODEL=<span style="opacity:.6">the model you pick</span></div>
+  </div>
+  <div class="abs card" style="left:840px;top:660px;width:980px;height:200px;padding:28px 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px">
+    <span class="label" style="color:var(--primary)">The verdict stays the same</span>
+    <p class="small" style="color:var(--ink);font-size:22px">The model runs the conversation and picks the checks. The verdict comes from the Amito trust report and its trust profile, whichever model is connected.</p>
+  </div>
+
+  <p class="src">Source. Amito toolkit, Oct 2026. Providers and settings as in its configuration template.</p>
+  <aside class="notes"><ul>
+    <li>Amito doesn't lock anyone into one AI vendor. Whoever runs it, a newsroom, a fact-checking team or a school, connects the model they prefer with their own API key. OpenAI, Claude, or a local model.</li>
+    <li>The key stays with them and so does the bill. With a local model there is no key at all, and the images never leave the organisation's computer. We tested Mistral Small 3.2 with Ollama on one GPU.</li>
+    <li>Switching is one setting in the configuration, the provider, its key and the model.</li>
+    <li>The model only runs the conversation and chooses checks. The verdict comes from the trust report and its written profile, so changing the model doesn't change the rules. Today Claude runs Amito as a free agent, and the other models follow the scripted STOP&amp;SCAN route.</li>
+  </ul></aside>
 </section>
