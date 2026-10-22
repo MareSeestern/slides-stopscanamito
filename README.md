@@ -22,7 +22,7 @@ Open http://localhost:5173. Saving any file reloads the page.
 | F | Full screen |
 | Home, End | First or last step |
 
-Deep links work too. `#s8` opens slide 8, `#s17-jpegtrust` opens slide 17 with the JPEG Trust asks.
+Deep links work too. `#s8` opens slide 8, `#s16-jpegtrust` opens slide 16 with the JPEG Trust asks.
 
 ## Edit it
 
