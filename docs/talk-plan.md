@@ -20,7 +20,7 @@ One 30 minute deck. The body is shared, and the closing asks switch between IPTC
 | Problem, pilot and the tools being built | 1 to 6 | STOP&SCAN | about 4 |
 | STOP&SCAN and Marcus's case | 7 to 8 | STOP&SCAN | about 6 |
 | Distribution and teaching | 9 | STOP&SCAN | about 2 |
-| Handoff and the Amito toolkit, with a demo | 10 to 14 | Tech team | about 13, may grow |
+| Handoff and Amito, with a demo | 10 to 14 | Tech team | about 13, may grow |
 | Asks | 15 to 17 | STOP&SCAN | about 5 |
 | Close | 18 | STOP&SCAN | under 1 |
 
