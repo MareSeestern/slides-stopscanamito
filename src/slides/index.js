@@ -16,7 +16,9 @@ import techIntro from './tech/11-introducing-amito.html?raw';
 import techOrchestrator from './tech/12a-orchestrator.html?raw';
 import techExplains from './tech/12c-plain-words.html?raw';
 import techDemo from './tech/13-demo.html?raw';
-import techKeys from './tech/14-bring-your-own-keys.html?raw';
+// Bring your own model: out of the talk for now, its points live on the orchestrator slide.
+// To bring it back, uncomment this import and techKeys in the list below.
+// import techKeys from './tech/14-bring-your-own-keys.html?raw';
 import asksOpening from './15-asks-opening.html?raw';
 import concernMap from './16-concern-map.html?raw';
 import fourAsks from './17-four-asks.html?raw';
@@ -37,7 +39,7 @@ export const slides = [
   techOrchestrator,
   techExplains,
   techDemo,
-  techKeys,
+  // techKeys,
   asksOpening,
   concernMap,
   fourAsks,

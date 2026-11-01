@@ -7,7 +7,9 @@ import { fileURLToPath } from 'node:url';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const slidesDir = join(root, 'src/slides');
 const index = readFileSync(join(slidesDir, 'index.js'), 'utf8');
-const files = [...index.matchAll(/from '\.\/([^']+)\?raw'/g)].map(m => m[1]);
+// Commented-out imports are slides kept out of the talk for now
+const live = index.split('\n').filter(l => !l.trim().startsWith('//')).join('\n');
+const files = [...live.matchAll(/from '\.\/([^']+)\?raw'/g)].map(m => m[1]);
 const { layouts } = await import(join(root, 'src/pile/layouts.js'));
 const { CHIPS } = await import(join(root, 'src/pile/chips.js'));
 
