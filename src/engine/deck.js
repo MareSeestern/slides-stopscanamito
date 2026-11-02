@@ -39,10 +39,17 @@ export function createDeck({ viewport, stage, pile, layouts, ui }) {
     s.querySelectorAll('.pill[data-k]').forEach(p => { const kk = +p.dataset.k; p.classList.toggle('now', kk === b); p.classList.toggle('past', kk < b); });
     // A slide's video[data-autoplay] plays while the slide is on and pauses when it leaves
     slides.forEach((sl, j) => sl.querySelectorAll('video[data-autoplay]').forEach(v => { if (j === i) v.play().catch(() => {}); else v.pause(); }));
-    const lay = layouts[s.dataset.id];
-    pile.apply(lay ? lay(b) : {});
     cur = k;
+    applyLayout();
     updateUI();
+  }
+
+  function applyLayout() {
+    if (cur < 0) return;
+    const [i, b] = steps[cur];
+    const s = slides[i];
+    const lay = layouts[s.dataset.id];
+    pile.apply(lay ? lay(b, aud) : {});
   }
 
   function updateUI() {
@@ -74,6 +81,7 @@ export function createDeck({ viewport, stage, pile, layouts, ui }) {
     document.body.dataset.aud = a;
     ui.audButton.textContent = 'Audience: ' + (a === 'iptc' ? 'IPTC' : 'JPEG Trust');
     try { localStorage.setItem('ss-aud', a); } catch (e) { /* storage blocked */ }
+    applyLayout();
     updateUI();
   }
 

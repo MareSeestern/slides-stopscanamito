@@ -29,6 +29,21 @@ The concern map (`16-concern-map.html`) is out of the order and kept as a backup
 
 The audience works on provenance best practice and implementation, so the deck uses IPTC's metadata vocabulary. Every IPTC field is a declaration, and STOP&SCAN says which step tests it (slide 7, beat 3). The limits slide uses IPTC's own Metawatch figures, and the IPTC asks point at the forthcoming implementation guide and the Photo Metadata software list.
 
+## The JPEG Trust angle
+
+Press A, or open the deck with `#jpegtrust`. The body stays shared. These pieces switch.
+
+| Slide | JPEG Trust version |
+| --- | --- |
+| 7, beat 3 | Figure 1 indicators. Source takes provenance, attribution and rights, and metadata. Content takes the media content. Alignment takes the proposed factuality indicator, the story and the media context |
+| 15, cards | Forged stays. Stripped becomes "Few images carry a trust record at all" and leads with the 27 manifests. Both ways becomes "Authentic is not accurate". Meta stays in the notes |
+| 15, beat 2 | The JPEG Trust report chip replaces the IPTC publisher list. It combines indicators under a profile a community chooses, and leaves open how a person reads the result |
+| 16, asks | Read a combined trust report. Test Amito against the reference software, with checks expressed as trust indicators. Work on media-context checks |
+| 16, side panel | Part 2 at FDIS, Part 4 at DIS, plus the proposed Factuality Trust Indicator |
+| 17 | Trust indicators, trust profiles and trust reports |
+
+The 32.8% out-of-context result is spoken on slide 16, not printed. Demirtas et al. is an author manuscript for SPIE, PDF dated 18 Aug 2026, with no DOI in the file. Do not call it a published standard. The Factuality Trust Indicator is their proposal.
+
 If the tech half needs more time, it comes out of the social half.
 
 ## Throughline

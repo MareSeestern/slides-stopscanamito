@@ -7,32 +7,47 @@
     <p>A researcher got an AI-generated image signed as an unedited Pixel Camera photo, on rooted or fault-injected Pixel 8a and 9a phones, without extracting the key.</p>
     <span class="cite">Buchanan, Aug 2026 · blog, not peer-reviewed</span>
   </div>
-  <div class="fail card" style="left:690px">
+  <div class="fail card" data-aud="iptc" style="left:690px">
     <span class="fail-tag">Stripped</span>
     <b>Most news photos are published without metadata</b>
     <p>11% of 6,580 lead photos from 425 news publishers carried any IPTC metadata. 27 had C2PA, none from a camera or a newsroom.</p>
     <span class="cite">IPTC Metawatch, Oct 2026 run</span>
   </div>
-  <div class="fail card" style="left:1280px">
+  <div class="fail card" data-aud="jpegtrust" style="left:690px">
+    <span class="fail-tag">Trust record</span>
+    <b>Few images carry a trust record at all</b>
+    <p>Only 27 of 6,580 lead photos carried a manifest, all but one from an AI or design tool, none from a camera or a newsroom.</p>
+    <span class="cite">IPTC Metawatch, Oct 2026 run</span>
+  </div>
+  <div class="fail card" data-aud="iptc" style="left:1280px">
     <span class="fail-tag">Both ways</span>
     <b>Labels can land on real photos</b>
     <p>Meta renamed Made with AI to AI info in July 2024, after content with only minor AI retouching was labelled from industry standard indicators.</p>
     <span class="cite">Meta, Jul 2024</span>
   </div>
+  <div class="fail card" data-aud="jpegtrust" style="left:1280px">
+    <span class="fail-tag">Not the same</span>
+    <b>Authentic is not accurate</b>
+    <p>An authentic image with valid provenance can still carry the wrong event, time or place.</p>
+    <span class="cite">Demirtas et al., SPIE 2026 manuscript</span>
+  </div>
   <div data-in="1">
     <p class="label abs" style="left:100px;top:624px;margin:0">What each piece does well, and what it leaves open for people</p>
     <div class="opengap" style="left:100px;top:730px"><p><b>Does well</b>Ties an image to the device that captured it</p><p><b>Leaves open</b>A valid signature doesn't mean a true scene</p></div>
     <div class="opengap" style="left:980px;top:730px"><p><b>Does well</b>Lets anyone check who signed a file and what changed</p><p><b>Leaves open</b>Some validators skip revocation checks by default</p></div>
-    <div class="opengap" style="left:100px;top:900px"><p><b>Does well</b>Confirms which news organisation signed the content</p><p><b>Leaves open</b>It verifies the publisher, not the claim</p></div>
+    <div class="opengap" data-aud="iptc" style="left:100px;top:900px"><p><b>Does well</b>Confirms which news organisation signed the content</p><p><b>Leaves open</b>It verifies the publisher, not the claim</p></div>
+    <div class="opengap" data-aud="jpegtrust" style="left:100px;top:900px"><p><b>Does well</b>Combines indicators under a profile a community chooses</p><p><b>Leaves open</b>How a person reads the combined result</p></div>
     <div class="opengap" style="left:980px;top:900px"><p><b>Does well</b>Can still flag AI output when metadata is stripped</p><p><b>Leaves open</b>It can contradict a validly signed manifest</p></div>
   </div>
-  <p class="src"><a href="https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html" target="_blank" rel="noopener">Buchanan</a> · <a href="https://iptc.org/news/announcing-iptc-metawatch/" target="_blank" rel="noopener">IPTC Metawatch</a> · <a href="https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/" target="_blank" rel="noopener">Meta</a> · <a href="https://blog.google/security/pixel-android-trusted-images-c2pa-content-credentials/" target="_blank" rel="noopener">Google</a> · <a href="https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html" target="_blank" rel="noopener">C2PA 2.4</a> · <a href="https://petapixel.com/2025/09/22/nikon-cant-fully-solve-the-z6-iiis-c2pa-problems-alone/" target="_blank" rel="noopener">PetaPixel</a> · <a href="https://iptc.org/news/iptc-c2pa-verified-news-publishers/" target="_blank" rel="noopener">IPTC Verified News Publishers</a> · <a href="https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content" target="_blank" rel="noopener">NIST AI 100-4</a> · <a href="https://arxiv.org/abs/2603.02378" target="_blank" rel="noopener">Nemecek et al., CVPR Workshops 2026</a></p>
+  <p class="src"><a href="https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html" target="_blank" rel="noopener">Buchanan</a> · <a href="https://iptc.org/news/announcing-iptc-metawatch/" target="_blank" rel="noopener">IPTC Metawatch</a> · <a href="https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/" target="_blank" rel="noopener">Meta</a> · <a href="https://blog.google/security/pixel-android-trusted-images-c2pa-content-credentials/" target="_blank" rel="noopener">Google</a> · <a href="https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html" target="_blank" rel="noopener">C2PA 2.4</a> · <a href="https://petapixel.com/2025/09/22/nikon-cant-fully-solve-the-z6-iiis-c2pa-problems-alone/" target="_blank" rel="noopener">PetaPixel</a> · <a href="https://iptc.org/news/iptc-c2pa-verified-news-publishers/" target="_blank" rel="noopener">IPTC Verified News Publishers</a> · <a href="https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content" target="_blank" rel="noopener">NIST AI 100-4</a> · <a href="https://arxiv.org/abs/2603.02378" target="_blank" rel="noopener">Nemecek et al., CVPR Workshops 2026</a> · <span data-aud="jpegtrust">Demirtas et al., SPIE 2026 manuscript, 18 Aug 2026</span></p>
   <aside class="notes"><ul>
     <li>Back from the tech section. Provenance matured a lot, and the usability gap is what remains. Three limits, all things Amito has to work around.</li>
     <li>Forged. Buchanan's frog image is AI-generated and carries a Pixel Camera signature saying it is an unedited photo. Pixel 8a and 9a, rooted or fault-injected, the key used as a signing oracle and never extracted. Not Pixel 10. It is a blog post, not peer-reviewed.</li>
+    <li>JPEG Trust, on the Forged card. A trust profile that trusts the Pixel signer would rate Buchanan's image as a camera capture. That is our reading of how a profile treats a trusted signer. Demirtas et al. do not discuss this case.</li>
     <li>If asked for more. Nikon suspended content credentials on the Z6III in Sep 2025 after a signing flaw and invalidated every certificate (DPReview). Photographing a synthetic image on a screen with a signing camera yields a valid signature (Park et al., USENIX Security 2025). Unsigned IPTC and Exif fields can be rewritten by anyone.</li>
     <li>Stripped. IPTC's own Metawatch, October 2026 run. 11% of 6,580 lead photos from 425 news publishers carried any IPTC metadata, and 7.2% carried credit or copyright. 27 had a C2PA manifest, all but one signed by an AI or design tool, none by a camera or a newsroom. Runs are monthly, so quote the October run. Platforms read different signals. Instagram reads Digital Source Type, LinkedIn reads C2PA.</li>
-    <li>Both ways. Meta renamed Made with AI to AI info on 1 Jul 2024, after content with minor AI modifications such as retouching got the label. A forged or over-broad declaration can make a real photo look fake, the liar's dividend from the start of the talk.</li>
-    <li>Beat 2. The provenance chips come back out of Amito. Lead each one with what it does well, then the gap it leaves for people. This is why Amito treats a declaration as a claim to test, and a missing one as nothing either way.</li>
+    <li>Both ways, IPTC. Meta renamed Made with AI to AI info on 1 Jul 2024, after content with minor AI modifications such as retouching got the label. A forged or over-broad declaration can make a real photo look fake, the liar's dividend from the start of the talk. For JPEG Trust this card leaves the slide and stays in these notes.</li>
+    <li>JPEG Trust, third card. Authentic is not accurate. An authentic image with valid provenance can still carry the wrong event, time or place. Demirtas et al., SPIE 2026 manuscript. The Factuality Trust Indicator is their proposal, not part of the standard.</li>
+    <li>Beat 2. The provenance chips come back out of Amito. Lead each one with what it does well, then the gap it leaves for people. This is why Amito treats a declaration as a claim to test, and a missing one as nothing either way. For JPEG Trust the third chip is the JPEG Trust report. It combines indicators under a profile a community chooses, and it leaves open how a person reads the combined result.</li>
   </ul></aside>
 </section>

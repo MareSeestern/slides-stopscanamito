@@ -156,12 +156,16 @@ export const layouts = {
   },
 
   // Asks, opening. Beat 1 brings four provenance chips back out of Amito, in two columns,
-  // each above its 'Does well' and 'Leaves open' lines.
-  asks1(b) {
+  // each above its 'Does well' and 'Leaves open' lines. JPEG Trust swaps the publisher
+  // list for the JPEG Trust report. The audience is the second argument.
+  asks1(b, aud) {
     const out = {};
-    if (b >= 1) ['capture', 'c2pa', 'iptcvp', 'watermark'].forEach((id, k) => {
-      out[id] = { x: 100 + (k % 2) * 880, y: 672 + Math.floor(k / 2) * 170, o: 1, cls: 'lit', dl: .1 + k * .08 };
-    });
+    if (b >= 1) {
+      const third = aud === 'jpegtrust' ? 'jtrust' : 'iptcvp';
+      ['capture', 'c2pa', third, 'watermark'].forEach((id, k) => {
+        out[id] = { x: 100 + (k % 2) * 880, y: 672 + Math.floor(k / 2) * 170, o: 1, cls: 'lit', dl: .1 + k * .08 };
+      });
+    }
     return out;
   }
 };
