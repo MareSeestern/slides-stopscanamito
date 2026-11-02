@@ -1,22 +1,39 @@
-<section class="slide" data-id="asks" data-label="Four asks">
+<section class="slide" data-id="asks" data-label="Three asks">
   <p class="eyebrow abs" style="left:100px;top:84px">What we ask</p>
-  <h2 class="h1 abs" style="left:100px;top:126px;font-size:64px">Four asks</h2>
+  <h2 class="h1 abs" style="left:100px;top:126px;font-size:64px">Three asks</h2>
   <ol class="asks">
-    <li><div><b>Reference a person-side model alongside the specs</b><span>STOP&amp;SCAN as the model for when and where provenance enters a person's process.</span></div></li>
-    <li><div><b>Separate system trust, entity trust and context</b><span>In what people see, a device-signed capture, an organisation's signature and the claim made with it are different things.</span></div></li>
-    <li><div><b>Co-design labelling language with user research</b><span>Including how people read a missing label.</span></div></li>
-    <li><div><b>Give Amito a platform to be tested and improved</b><span>With the people who publish and label media, including a conversation about using your vocabulary in its agent's decisions.</span></div></li>
+    <li><div>
+      <b data-aud="iptc">Agree which fields should reach people, and how they are read</b>
+      <span data-aud="iptc">A person-facing profile of IPTC metadata for your implementation guidance. We bring the user research, including how people read Digital Source Type labels and a missing one.</span>
+      <b data-aud="jpegtrust">Agree how a third-party trust report is attached and shown</b>
+      <span data-aud="jpegtrust">An evidence state with its date and the checks run, never a verified badge.</span>
+    </div></li>
+    <li><div>
+      <b data-aud="iptc">Test STOP&amp;SCAN with your members</b>
+      <span data-aud="iptc">If it holds, reference it where your guidance meets the people who see the media.</span>
+      <b data-aud="jpegtrust">Test Amito against the JPEG Trust reference software</b>
+      <span data-aud="jpegtrust">Amito already sorts its evidence with a trust profile and writes a trust report. We want to know how close they are to yours.</span>
+    </div></li>
+    <li><div>
+      <b data-aud="iptc">List Amito among software that reads IPTC Photo Metadata</b>
+      <span data-aud="iptc">And give it a place to be tested and improved with your members, using your vocabulary in its agent's decisions.</span>
+      <b data-aud="jpegtrust">Keep trust profiles open to third-party checks</b>
+      <span data-aud="jpegtrust">Detectors and context checks, not only manifest validation, in how profiles are written and shared.</span>
+    </div></li>
   </ol>
   <div class="tailor card">
     <span class="label" style="color:var(--primary)"><span data-aud="iptc">For IPTC</span><span data-aud="jpegtrust">For JPEG Trust</span></span>
-    <p class="body" data-aud="iptc">Ask 3 targets Digital Source Type. No peer-reviewed study we found tests how lay people read terms such as compositeWithTrainedAlgorithmicMedia, algorithmicallyEnhanced or humanEdits.</p>
-    <p class="body" data-aud="iptc">Ask 2 targets the Verified News Publishers List.</p>
-    <p class="body" data-aud="jpegtrust">Ask 2 targets Trust Profiles and Trust Reports, the natural place to express entity versus system weighting.</p>
-    <p class="body" data-aud="jpegtrust">Part 2 on profiles and reports is not yet published, so there is still room to shape it.</p>
+    <p class="body" data-aud="iptc">Ask 1. Your C2PA FAQ says a forthcoming implementation guide will specify which metadata properties can be used. No peer-reviewed study we found tests how lay people read terms such as compositeWithTrainedAlgorithmicMedia or algorithmicallyEnhanced.</p>
+    <p class="body" data-aud="iptc">Ask 3. IPTC lists software that supports IPTC Photo Metadata, with data from each vendor.</p>
+    <p class="body" data-aud="jpegtrust">Part 2, Trust profiles and reports, has been at FDIS since 21 Sep 2026. Part 4, reference software, is at DIS.</p>
+    <p class="body" data-aud="jpegtrust">Ask 3 looks past this edition, to how profiles are shared and to the next one.</p>
   </div>
-  <p class="src"><a href="https://cv.iptc.org/newscodes/digitalsourcetype/" target="_blank" rel="noopener">IPTC Digital Source Type</a> · <a href="https://iptc.org/verified-news-publishers-list/" target="_blank" rel="noopener">IPTC Verified News Publishers List</a> · <a href="https://www.iso.org/standard/91405.html" target="_blank" rel="noopener">ISO/IEC 21617-1:2026</a> · <a href="https://github.com/c2pa-org/conformance-public/blob/main/docs/v0.2/C2PA%20Conformance%20Program.md" target="_blank" rel="noopener">C2PA Conformance Program v0.2</a></p>
+  <p class="src"><a href="https://iptc.org/std/guidelines/media-provenance/C2PA-FAQs/IPTC-C2PA-FAQs-v1.0-2027-07-08.pdf" target="_blank" rel="noopener">IPTC C2PA FAQ, Jul 2026</a> · <a href="https://cv.iptc.org/newscodes/digitalsourcetype/" target="_blank" rel="noopener">IPTC Digital Source Type</a> · <a href="https://iptc.org/standards/photo-metadata/software-support/" target="_blank" rel="noopener">IPTC Photo Metadata software support</a> · <a href="https://www.iso.org/standard/91405.html" target="_blank" rel="noopener">ISO/IEC 21617-1:2026</a> · <a href="https://committee.iso.org/standard/89038.html" target="_blank" rel="noopener">ISO/IEC 21617-2 status</a> · <a href="https://committee.iso.org/standard/93391.html" target="_blank" rel="noopener">ISO/IEC 21617-4 status</a></p>
   <aside class="notes"><ul>
-    <li>Four asks. The audience panel on the right switches with the A key or the audience button.</li>
-    <li>Conformance is a separate C2PA process, so it is not an ask here. The ask to this room is a platform to test and improve Amito, and a conversation about their vocabulary in its agent's decisions.</li>
+    <li>Three asks. The audience panel on the right and the asks themselves switch with the A key or the audience button.</li>
+    <li>IPTC, ask 1. IPTC already defines the fields. The gap is which ones survive to the viewer and how a person reads them, and Metawatch already measures survival. We bring the user research on the Digital Source Type labels, such as Edited using Generative AI.</li>
+    <li>IPTC, ask 3. IPTC lists software that supports its Photo Metadata, using data the vendor supplies. We ask to be listed, not certified. Conformance is a separate C2PA process and is not an ask here.</li>
+    <li>JPEG Trust, ask 1. Custom assertions are already possible in C2PA and in JPEG Trust, so the question is how a third-party report is shown, not whether it can be stored. A verified badge would invite the overreliance our own concern map warns about (Höltervennhoff et al., CHI 2026).</li>
+    <li>JPEG Trust, ask 3. Part 2 is at FDIS, where ballots take editorial comments only, so this is about how profiles get written and shared, and the next edition.</li>
   </ul></aside>
 </section>

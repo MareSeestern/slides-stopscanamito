@@ -223,3 +223,9 @@ body[data-aud="iptc"] [data-aud="jpegtrust"],body[data-aud="jpegtrust"] [data-au
 /* tech placeholders */
 .techbox{position:absolute;left:100px;right:100px;top:300px;bottom:110px;border:3px dashed var(--outline-v);border-radius:28px;background:var(--surface-low);padding:44px 52px;box-sizing:border-box;display:flex;flex-direction:column;gap:18px}
 .techbox .label{color:var(--primary)}
+
+/* STOP&SCAN slide, beat 3. IPTC fields per column */
+.fields{padding:22px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px;z-index:30}
+.fields .label{font-size:15px;color:var(--primary)}
+.fields b{font:700 25px/1.2 var(--f-display);color:var(--ink)}
+.fields p{margin:0;font:400 21px/1.5 var(--f-body);color:var(--ink)}

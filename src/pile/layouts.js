@@ -51,7 +51,10 @@ export const layouts = {
   families(b) {
     const out = {}, o = b ? .28 : 1;
     ofFamily('det').forEach((id, j) => { out[id] = { x: 110 + (j % 2) * 340, y: 470 + Math.floor(j / 2) * 90, r: (rnd(id, 'r') - .5) * 3, o, dl: j * .05 }; });
-    ofFamily('prov').forEach((id, j) => { out[id] = { x: 1010 + (j % 2) * 380, y: 470 + Math.floor(j / 2) * 80, r: (rnd(id, 'r') - .5) * 3, o, dl: j * .05 }; });
+    // Provenance splits in two. Signed or embedded by the maker above, and the declared
+    // IPTC and Exif fields alone below, next to their caption on the slide.
+    ofFamily('prov').filter(id => id !== 'meta').forEach((id, j) => { out[id] = { x: 1010 + (j % 2) * 380, y: 420 + Math.floor(j / 2) * 70, r: (rnd(id, 'r') - .5) * 3, o, dl: j * .05 }; });
+    out.meta = { x: 1010, y: 708, o, dl: .3 };
     // One block under the label. Widths are the rendered chips, with a small gap,
     // so the seven rules stay together and clear of the source line.
     const rulePos = {
@@ -96,10 +99,11 @@ export const layouts = {
   },
 
   // "STOP&SCAN gives every method a place". The pile sorts into the columns.
-  scan() {
+  // Beat 2 fades the column chips so the IPTC field cards can take their place.
+  scan(b) {
     const out = {};
     ['source', 'content', 'alignment'].forEach(st => ofStep(st).forEach((id, j) => {
-      out[id] = { x: COLX[COL[st]] + 14, y: 410 + j * 54, o: 1, dl: .05 + j * .045 + COL[st] * .05 };
+      out[id] = { x: COLX[COL[st]] + 14, y: 410 + j * 52, o: b >= 2 ? 0 : 1, dl: b >= 2 ? 0 : .05 + j * .045 + COL[st] * .05 };
     }));
     // One row of all seven marking rules. x is the unscaled top-left. Scale keeps the band above the source line.
     const ruleX = [120, 326, 556, 738, 968, 1206, 1436];

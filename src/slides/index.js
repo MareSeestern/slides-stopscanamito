@@ -20,7 +20,9 @@ import techDemo from './tech/13-demo.html?raw';
 // To bring it back, uncomment this import and techKeys in the list below.
 // import techKeys from './tech/14-bring-your-own-keys.html?raw';
 import asksOpening from './15-asks-opening.html?raw';
-import concernMap from './16-concern-map.html?raw';
+// Concern map: out of the talk for now, to keep the asks to about three minutes.
+// To bring it back, uncomment this import and concernMap in the list below.
+// import concernMap from './16-concern-map.html?raw';
 import fourAsks from './17-four-asks.html?raw';
 import close from './18-close.html?raw';
 
@@ -41,7 +43,7 @@ export const slides = [
   techDemo,
   // techKeys,
   asksOpening,
-  concernMap,
+  // concernMap,
   fourAsks,
   close
 ];

@@ -33,7 +33,7 @@ export const CHIPS = [
   { id: 'capture', label: 'Capture signing', family: 'prov', sector: 'industry', step: 'source' },
   { id: 'apple', label: 'Apple Reference Image', family: 'prov', sector: 'industry', step: 'source' },
   { id: 'watermark', label: 'Watermark check', family: 'prov', sector: 'industry', step: 'source' },
-  { id: 'meta', label: 'Metadata reader', family: 'prov', sector: 'industry', step: 'content' },
+  { id: 'meta', label: 'IPTC and Exif fields', family: 'prov', sector: 'standards', step: 'source' },
   { id: 'revimg', label: 'Reverse image search', family: 'search', sector: 'industry', step: 'source' },
   { id: 'c2pa', label: 'C2PA validator', family: 'prov', sector: 'standards', step: 'source' },
   { id: 'jtrust', label: 'JPEG Trust report', family: 'prov', sector: 'standards', step: 'source' },

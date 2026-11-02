@@ -1,23 +1,23 @@
-<section class="slide" data-id="asks1" data-label="Provenance matured, the usability gap remains" data-steps="2">
+<section class="slide" data-id="asks1" data-label="Forged, stripped, both ways" data-steps="2">
   <p class="eyebrow abs" style="left:100px;top:66px">Where things stand</p>
   <h2 class="h1 abs" style="left:100px;top:104px;width:1720px;font-size:64px"><span style="color:var(--ink-2)">Provenance matured a lot.</span><br>However, the usability gap remains.</h2>
   <div class="fail card" style="left:100px">
-    <span class="fail-tag">Camera</span>
-    <b>Nikon paused its camera credentials</b>
-    <p>Nikon suspended content credentials on its only C2PA camera, the Z6III, in Sep 2025 after a signing flaw, and invalidated every certificate it had issued.</p>
-    <span class="cite">DPReview, Sep 2025</span>
-  </div>
-  <div class="fail card" style="left:690px">
-    <span class="fail-tag">Phone</span>
-    <b>Pixel signatures forged on rooted phones</b>
-    <p>A researcher forged Pixel Camera signatures on rooted or fault-injected Pixel 8a and 9a phones, without extracting the key.</p>
+    <span class="fail-tag">Forged</span>
+    <b>An AI image signed as a real Pixel photo</b>
+    <p>A researcher got an AI-generated image signed as an unedited Pixel Camera photo, on rooted or fault-injected Pixel 8a and 9a phones, without extracting the key.</p>
     <span class="cite">Buchanan, Aug 2026 · blog, not peer-reviewed</span>
   </div>
+  <div class="fail card" style="left:690px">
+    <span class="fail-tag">Stripped</span>
+    <b>Most news photos are published without metadata</b>
+    <p>11% of 6,580 lead photos from 425 news publishers carried any IPTC metadata. 27 had C2PA, none from a camera or a newsroom.</p>
+    <span class="cite">IPTC Metawatch, Oct 2026 run</span>
+  </div>
   <div class="fail card" style="left:1280px">
-    <span class="fail-tag">Research</span>
-    <b>A photographed fake still gets a valid signature</b>
-    <p>Photographing a synthetic image on a screen with a signing camera yields a valid signature.</p>
-    <span class="cite">Park et al., USENIX Security 2025</span>
+    <span class="fail-tag">Both ways</span>
+    <b>Labels can land on real photos</b>
+    <p>Meta renamed Made with AI to AI info in July 2024, after content with only minor AI retouching was labelled from industry standard indicators.</p>
+    <span class="cite">Meta, Jul 2024</span>
   </div>
   <div data-in="1">
     <p class="label abs" style="left:100px;top:624px;margin:0">What each piece does well, and what it leaves open for people</p>
@@ -26,11 +26,13 @@
     <div class="opengap" style="left:100px;top:900px"><p><b>Does well</b>Confirms which news organisation signed the content</p><p><b>Leaves open</b>It verifies the publisher, not the claim</p></div>
     <div class="opengap" style="left:980px;top:900px"><p><b>Does well</b>Can still flag AI output when metadata is stripped</p><p><b>Leaves open</b>It can contradict a validly signed manifest</p></div>
   </div>
-  <p class="src"><a href="https://www.dpreview.com/news/0156322200/nikon-temporarily-suspends-its-z6iii-content-credential-program/" target="_blank" rel="noopener">DPReview</a> · <a href="https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html" target="_blank" rel="noopener">Buchanan</a> · <a href="https://www.usenix.org/system/files/usenixsecurity25-park.pdf" target="_blank" rel="noopener">Park et al., USENIX Security 2025</a> · <a href="https://blog.google/security/pixel-android-trusted-images-c2pa-content-credentials/" target="_blank" rel="noopener">Google</a> · <a href="https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html" target="_blank" rel="noopener">C2PA 2.4</a> · <a href="https://petapixel.com/2025/09/22/nikon-cant-fully-solve-the-z6-iiis-c2pa-problems-alone/" target="_blank" rel="noopener">PetaPixel</a> · <a href="https://iptc.org/news/iptc-c2pa-verified-news-publishers/" target="_blank" rel="noopener">IPTC Verified News Publishers</a> · <a href="https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content" target="_blank" rel="noopener">NIST AI 100-4</a> · <a href="https://arxiv.org/abs/2603.02378" target="_blank" rel="noopener">Nemecek et al., CVPR Workshops 2026</a></p>
+  <p class="src"><a href="https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html" target="_blank" rel="noopener">Buchanan</a> · <a href="https://iptc.org/news/announcing-iptc-metawatch/" target="_blank" rel="noopener">IPTC Metawatch</a> · <a href="https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/" target="_blank" rel="noopener">Meta</a> · <a href="https://blog.google/security/pixel-android-trusted-images-c2pa-content-credentials/" target="_blank" rel="noopener">Google</a> · <a href="https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html" target="_blank" rel="noopener">C2PA 2.4</a> · <a href="https://petapixel.com/2025/09/22/nikon-cant-fully-solve-the-z6-iiis-c2pa-problems-alone/" target="_blank" rel="noopener">PetaPixel</a> · <a href="https://iptc.org/news/iptc-c2pa-verified-news-publishers/" target="_blank" rel="noopener">IPTC Verified News Publishers</a> · <a href="https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content" target="_blank" rel="noopener">NIST AI 100-4</a> · <a href="https://arxiv.org/abs/2603.02378" target="_blank" rel="noopener">Nemecek et al., CVPR Workshops 2026</a></p>
   <aside class="notes"><ul>
-    <li>Open on what the room built. Provenance matured a lot, and the usability gap is what remains.</li>
-    <li>Three cases, in their verified form. Nikon is a suspension of one camera, not an industry retreat, and Canon and Sony expanded support in 2026.</li>
-    <li>Pixel. Pixel 8a and 9a, rooted or fault-injected, key used as a signing oracle. Not Pixel 10, no key extracted.</li>
-    <li>Beat 2. The provenance chips come back out of Amito. Lead each one with what it does well, then the gap it leaves for people.</li>
+    <li>Back from the tech section. Provenance matured a lot, and the usability gap is what remains. Three limits, all things Amito has to work around.</li>
+    <li>Forged. Buchanan's frog image is AI-generated and carries a Pixel Camera signature saying it is an unedited photo. Pixel 8a and 9a, rooted or fault-injected, the key used as a signing oracle and never extracted. Not Pixel 10. It is a blog post, not peer-reviewed.</li>
+    <li>If asked for more. Nikon suspended content credentials on the Z6III in Sep 2025 after a signing flaw and invalidated every certificate (DPReview). Photographing a synthetic image on a screen with a signing camera yields a valid signature (Park et al., USENIX Security 2025). Unsigned IPTC and Exif fields can be rewritten by anyone.</li>
+    <li>Stripped. IPTC's own Metawatch, October 2026 run. 11% of 6,580 lead photos from 425 news publishers carried any IPTC metadata, and 7.2% carried credit or copyright. 27 had a C2PA manifest, all but one signed by an AI or design tool, none by a camera or a newsroom. Runs are monthly, so quote the October run. Platforms read different signals. Instagram reads Digital Source Type, LinkedIn reads C2PA.</li>
+    <li>Both ways. Meta renamed Made with AI to AI info on 1 Jul 2024, after content with minor AI modifications such as retouching got the label. A forged or over-broad declaration can make a real photo look fake, the liar's dividend from the start of the talk.</li>
+    <li>Beat 2. The provenance chips come back out of Amito. Lead each one with what it does well, then the gap it leaves for people. This is why Amito treats a declaration as a claim to test, and a missing one as nothing either way.</li>
   </ul></aside>
 </section>

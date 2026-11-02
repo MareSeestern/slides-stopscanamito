@@ -1,6 +1,6 @@
 # STOP&SCAN and Amito deck
 
-A 30 minute talk for the IPTC working group and JPEG Trust. The STOP&SCAN team (AMAS humanities group) presents the framework, and the Amito team (AMAS technology group) presents the toolkit. Questions come after the 30 minutes. The deck is a Vite app in plain JavaScript, presented in a browser at 1920 x 1080 and scaled to fit.
+A 30 minute talk for the IPTC working group and JPEG Trust. The STOP&SCAN team (AMAS humanities group) presents the framework, and the Amito team (AMAS technology group) presents the toolkit. About 5 minutes of questions fall inside the 30. The deck is a Vite app in plain JavaScript, presented in a browser at 1920 x 1080 and scaled to fit.
 
 ## Commands
 
