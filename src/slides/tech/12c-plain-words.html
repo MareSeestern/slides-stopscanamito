@@ -14,7 +14,7 @@
     "format": "image/png", "instance_id": "xmp:iid:38b01ca6-326b-45da-a9e6-935a806d9390",
     "assertions": [ { "label": "c2pa.actions.v2", "data": { "actions": [ {
         "action": "c2pa.created", "softwareAgent": "Flux.1",
-        "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia" } ] } },
+        <span style="background:var(--primary);color:var(--white);border-radius:4px;padding:1px 4px">"digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia"</span> } ] } },
       { "label": "c2pa.ai_generated_content", "data": { "model": "Flux.1", "ai_generated": true } },
       { "label": "c2pa.content-origin", "data": { "creator": "Black Forest Labs" } },
       { "label": "c2pa.creation-tool", "data": { "tool": "Black Forest Labs API - Flux.1" } } ],
@@ -24,6 +24,7 @@
     { "code": "signingCredential.untrusted", "url": "self#jumbf=/c2pa/urn:uuid:851b30d6-af63-460c-967a-52b40e4cdb0b/c2pa.signature", "explanation": "signing certificate untrusted" },
     { "code": "claimSignature.mismatch", "url": "self#jumbf=/c2pa/urn:uuid:851b30d6-af63-460c-967a-52b40e4cdb0b/c2pa.signature", "explanation": "claim signature is not valid" } ]
 }</pre>
+    <span class="tag abs" style="left:26px;bottom:26px;font-size:17px;padding:8px 16px;background:var(--primary);color:var(--white)">Highlighted. IPTC Digital Source Type</span>
   </div>
 
   <div class="chat" style="left:880px;top:340px;width:940px;height:650px">
@@ -39,6 +40,7 @@
   <p class="src">Source. Amito web chat and its C2PA check, run on an image made with Flux.1, 22 Oct 2026.</p>
   <aside class="notes"><ul>
     <li>This is what a C2PA validator returns for the image, an excerpt of the real manifest. URNs, assertion labels, a certificate serial number and two failure codes, signingCredential.untrusted and claimSignature.mismatch. Correct, and meaningless to most people.</li>
+    <li>The highlighted line is the IPTC Digital Source Type, trainedAlgorithmicMedia. Amito reads it in Content Credentials and in ordinary file metadata, and says it as made by AI.</li>
     <li>Amito reads the same result and says it in one sentence. The credentials say an AI tool made it, and the signer isn't verified.</li>
     <li>Then the person can ask what that means, in their own words, and Amito explains the trust list and the edit after signing. These are Amito's real replies, from a run on an image made with Flux.1.</li>
     <li>Every check works this way. Missing credentials, the SynthID watermark, the pixel detectors. Each result comes with what it does and doesn't prove, so a missing label is never read as proof that a photo is real.</li>
