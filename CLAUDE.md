@@ -2,6 +2,8 @@
 
 A 30 minute talk for the IPTC working group and JPEG Trust. The STOP&SCAN team (AMAS humanities group) presents the framework, and the Amito team (AMAS technology group) presents the toolkit. About 5 minutes of questions fall inside the 30. The deck is a Vite app in plain JavaScript, presented in a browser at 1920 x 1080 and scaled to fit.
 
+**IUI_Paper branch.** This branch turns the deck into the IUI 2027 demo video, at most 5 minutes, built from the demo paper (`_IUI__AMITO_Toolkit(1).pdf`). The slide order in `src/slides/index.js` is the video, and the IPTC talk's other slides stay in the repo, commented out. Here the system is written **AMITO** and the first step **STOP**, as in the paper. The speaker notes are the voiceover script, with a target time per slide. Claims for the video are in the IUI section of `docs/claims.md`.
+
 ## Commands
 
 ```bash

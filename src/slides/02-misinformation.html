@@ -1,4 +1,4 @@
-<section class="slide" data-id="misinfo" data-label="Both directions" data-steps="3">
+<section class="slide" data-id="misinfo" data-label="The problem" data-steps="2">
   <p class="eyebrow abs" style="left:100px;top:84px">The problem</p>
   <h2 class="h1 abs" style="left:100px;top:126px;width:1500px">Media misinformation runs in both directions</h2>
   <div data-out="1">
@@ -22,36 +22,16 @@
     </article>
     <p class="small abs" style="left:100px;top:960px">Illustrative posts.</p>
   </div>
-  <div class="spec" data-in="1">
-    <div class="spec-head">
-      <span class="q">Real or fake?</span>
-      <p>Six of the 17 current IPTC Digital Source Type terms. What is claimed about an image matters as much as where it sits on this scale.</p>
-    </div>
-    <div class="bar" aria-hidden="true"><span class="mk"></span></div>
-    <ol class="ticks">
-      <li style="--i:0"><b class="n">01</b><code>digital<wbr>Capture</code><span>Captured by a camera</span><div class="meter" aria-hidden="true"><i></i></div></li>
-      <li style="--i:1"><b class="n">02</b><code>computational<wbr>Capture</code><span>Processed by the phone at capture</span><div class="meter" aria-hidden="true"><i></i></div></li>
-      <li style="--i:2"><b class="n">03</b><code>human<wbr>Edits</code><span>Touched up by a person</span><div class="meter" aria-hidden="true"><i></i></div></li>
-      <li style="--i:3"><b class="n">04</b><code>algorithmically<wbr>Enhanced</code><span>Enhanced by AI</span><div class="meter" aria-hidden="true"><i></i></div></li>
-      <li style="--i:4"><b class="n">05</b><code>composite<wbr>With<wbr>Trained<wbr>Algorithmic<wbr>Media</code><span>AI inpainting in a real photo</span><div class="meter" aria-hidden="true"><i></i></div></li>
-      <li style="--i:5"><b class="n">06</b><code>trained<wbr>Algorithmic<wbr>Media</code><span>Fully generated</span><div class="meter" aria-hidden="true"><i></i></div></li>
-    </ol>
+  <div class="callouts" data-in="1" style="top:300px;grid-template-columns:repeat(2,1fr);gap:48px">
+    <div class="card"><span class="h3" style="font-size:44px">Most people are guessing</span><p class="body" style="color:var(--ink);font-size:30px">Across 3,002 people in the US, Germany and China, most could not reliably tell AI-generated media from real, and AI media was rated more human-like.</p><span class="cite" style="font-size:20px">Frank et al., IEEE S&amp;P 2024</span></div>
+    <div class="card"><span class="h3" style="font-size:44px">Most misleading media is miscaptioned</span><p class="body" style="color:var(--ink);font-size:30px">In fact-checked media misinformation, simple context manipulations outnumbered AI-generated content, even as AI content rose.</p><span class="cite" style="font-size:20px">Dufour et al., 2024, preprint</span></div>
   </div>
-  <div class="callouts" data-in="2">
-    <div class="card"><span class="h3">Most people are guessing</span><p class="small" style="color:var(--ink)">Across 3,002 people in the US, Germany and China, most could not reliably tell AI-generated media from real, and AI media was rated more human-like.</p><span class="cite">Frank et al., IEEE S&amp;P 2024</span></div>
-    <div class="card"><span class="h3">Calling real evidence fake pays</span><p class="small" style="color:var(--ink)">In five experiments with over 15,000 US adults, politicians who called a scandal fake news or a deepfake gained support. The effect was largely absent against video.</p><span class="cite">Schiff, Schiff and Bueno, APSR 2025</span></div>
-    <div class="card"><span class="h3">Most misleading media is miscaptioned</span><p class="small" style="color:var(--ink)">In fact-checked media misinformation, simple context manipulations outnumbered AI-generated content, even as AI content rose.</p><span class="cite">Dufour et al., 2024, preprint</span></div>
-  </div>
-  <p class="src">Sources. <a href="https://cv.iptc.org/newscodes/digitalsourcetype/" target="_blank" rel="noopener">IPTC Digital Source Type</a> · <a href="https://arxiv.org/abs/2312.05976" target="_blank" rel="noopener">Frank et al., IEEE S&amp;P 2024</a> · <a href="https://www.cambridge.org/core/journals/american-political-science-review/article/liars-dividend-can-politicians-claim-misinformation-to-evade-accountability/687FEE54DBD7ED0C96D72B26606AA073" target="_blank" rel="noopener">Schiff, Schiff and Bueno, APSR 2025</a> · <a href="https://doi.org/10.15779/Z38RV0D15J" target="_blank" rel="noopener">Chesney and Citron, California Law Review 2019</a> · <a href="https://arxiv.org/abs/2405.11697" target="_blank" rel="noopener">Dufour et al., 2024</a></p>
+  <p class="abs" data-in="1" style="left:100px;top:690px;width:1720px;margin:0;font:700 46px/1.25 var(--f-display);color:var(--ink)">Forensic tools address both. But which tool fits this case, and how do I read what it returns?</p>
+  <p class="src">Sources. <a href="https://arxiv.org/abs/2312.05976" target="_blank" rel="noopener">Frank et al., IEEE S&amp;P 2024</a> · <a href="https://arxiv.org/abs/2405.11697" target="_blank" rel="noopener">Dufour et al., 2024, preprint</a></p>
   <aside class="notes"><ul>
-    <li>Beat 1, the feed. Misinformation now runs in both directions.</li>
-    <li>First post. Sometimes it is a synthetic image with a false claim.</li>
-    <li>Second post. More often it is a real photo with a false caption. Fact-check data shows these context tricks are more common than AI content, even as AI content grows. Dufour and colleagues, 2024, a preprint.</li>
-    <li>Third post. And sometimes it is a real photo labelled AI fake. That third kind is the liar's dividend. Once fakes exist, real evidence becomes deniable, and research shows politicians can gain support by falsely calling a scandal fake. The effect was largely absent against video.</li>
-    <li>People can't sort this by eye. In a study of 3,002 people in the US, Germany and China, most were basically guessing.</li>
-    <li>Beat 2, the feed collapses onto the scale. So real or fake has no clean answer. Most phone photos are processed by the camera before anyone edits them. The marker runs the scale and rests on computational capture. Retouching, AI enhancement and full generation sit on one scale.</li>
-    <li>Point to the labels. This scale is your vocabulary. IPTC's Digital Source Type already describes this. We'll come back to it at the end.</li>
-    <li>Beat 3. The three cards are those studies. Most people are guessing. Calling real evidence fake pays. Most misleading media is miscaptioned.</li>
-    <li>If asked whether anyone reads these terms. Instagram reads IPTC Digital Source Type to label AI images but not C2PA, and LinkedIn reads C2PA but not IPTC (Indicator test, reported by IPTC, 18 Mar 2026).</li>
+    <li>About 20 seconds.</li>
+    <li>Beat 1. Misinformation comes in more than one shape. A synthetic image with a false claim. A real photo with a false caption. A real photo called fake.</li>
+    <li>Beat 2. People can't sort this by eye. In a study of 3,002 people in three countries, most could not reliably tell AI-generated media from real. And among fact-checked media misinformation, simple context manipulations outnumbered AI-generated content. That second study is a preprint.</li>
+    <li>Forensic tools address both. But they presuppose expertise. Which tool fits this case, and how do I read what it returns?</li>
   </ul></aside>
 </section>

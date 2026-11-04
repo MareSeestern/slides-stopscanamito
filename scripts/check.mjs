@@ -2,7 +2,7 @@
 // Errors stop the build. Warnings are worth a look but don't block.
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const slidesDir = join(root, 'src/slides');
@@ -10,8 +10,8 @@ const index = readFileSync(join(slidesDir, 'index.js'), 'utf8');
 // Commented-out imports are slides kept out of the talk for now
 const live = index.split('\n').filter(l => !l.trim().startsWith('//')).join('\n');
 const files = [...live.matchAll(/from '\.\/([^']+)\?raw'/g)].map(m => m[1]);
-const { layouts } = await import(join(root, 'src/pile/layouts.js'));
-const { CHIPS } = await import(join(root, 'src/pile/chips.js'));
+const { layouts } = await import(pathToFileURL(join(root, 'src/pile/layouts.js')).href);
+const { CHIPS } = await import(pathToFileURL(join(root, 'src/pile/chips.js')).href);
 
 const errors = [], warnings = [], rows = [];
 const err = (f, m) => errors.push(`${f}: ${m}`);

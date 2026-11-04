@@ -1,7 +1,7 @@
-<section class="slide" data-id="tech" data-label="Bring your own model">
-  <p class="eyebrow abs" style="left:100px;top:110px;color:var(--primary)">Amito · tech team</p>
-  <h2 class="h1 abs" style="left:100px;top:152px">Bring your own model</h2>
-  <p class="body abs" style="left:100px;top:262px;width:1500px">Whoever runs Amito connects the AI model they prefer with their own API key. One setting switches it.</p>
+<section class="slide" data-id="tech" data-label="Modular architecture">
+  <p class="eyebrow abs" style="left:100px;top:110px;color:var(--primary)">C4 · Modular architecture</p>
+  <h2 class="h1 abs" style="left:100px;top:152px">Host it yourself, swap any part</h2>
+  <p class="body abs" style="left:100px;top:262px;width:1500px">Any LLM with tool calling can run AMITO, locally through Ollama or through a hosted API. One setting switches it.</p>
 
   <div class="abs card" style="left:100px;top:370px;width:547px;height:240px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px">
     <div style="display:flex;align-items:center;gap:20px">
@@ -22,23 +22,23 @@
       <span style="flex:none;width:76px;height:76px;border-radius:20px;border:var(--hair);background:var(--white);display:grid;place-items:center;box-shadow:var(--shadow-soft)"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3 20 3"/><path d="m16 7 3 3"/><path d="m18.5 4.5 2 2"/></svg></span>
       <div style="display:flex;flex-direction:column;gap:6px"><span class="label" style="color:var(--primary)">Private</span><b class="h3" style="font-size:34px">A local model</b></div>
     </div>
-    <p class="small" style="color:var(--ink)">An open model runs with Ollama on the organisation's own computer. No key, and images need not leave it.</p>
+    <p class="small" style="color:var(--ink)">An open model runs with Ollama on the organisation's own computer. Images need not reach an LLM provider.</p>
   </div>
   <div class="abs" style="left:100px;top:660px;width:700px;height:200px;box-sizing:border-box;padding:30px 36px;border-radius:24px;background:var(--inverse);color:var(--on-inverse);font:500 26px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;box-shadow:var(--shadow-card)">
     <div>LLM_PROVIDER=claude</div>
     <div>ANTHROPIC_API_KEY=<span style="opacity:.6">your own key</span></div>
     <div>CLAUDE_MODEL=<span style="opacity:.6">the model you pick</span></div>
   </div>
-  <div class="abs card" style="left:840px;top:660px;width:980px;height:200px;padding:28px 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px">
-    <span class="label" style="color:var(--primary)">The verdict stays the same</span>
-    <p class="small" style="color:var(--ink);font-size:22px">The model runs the conversation and picks the checks. The verdict comes from the Amito trust report and its trust profile, whichever model is connected.</p>
+  <div class="abs card" style="left:840px;top:660px;width:980px;height:300px;padding:26px 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px">
+    <span class="label" style="color:var(--primary)">Exchange or extend</span>
+    <p class="small" style="color:var(--ink);font-size:22px"><b>Forensic models.</b> New detectors join the detection service behind a shared interface.</p><p class="small" style="color:var(--ink);font-size:22px"><b>Tools and API connections.</b> The agent orchestrates them like the existing checks.</p><p class="small" style="color:var(--ink);font-size:22px"><b>Trust profile.</b> An organisation can write its own.</p><p class="small" style="color:var(--ink);font-size:22px;font-weight:700;margin-top:auto">The rules, not the LLM, weigh the evidence, so the LLM can be exchanged.</p>
   </div>
 
-  <p class="src">Source. Amito, Oct 2026. Providers and settings as in its configuration template.</p>
+  <p class="src">Source. AMITO, Oct 2026. Providers and settings as in its configuration template.</p>
   <aside class="notes"><ul>
-    <li>Amito doesn't lock anyone into one AI vendor. Whoever runs it, a newsroom, a fact-checking team or a school, connects the model they prefer with their own API key. OpenAI, Claude, or a local model.</li>
-    <li>The key stays with them and so does the bill. With a local model there is no key at all, and the images never leave the organisation's computer. We tested Mistral Small 3.2 with Ollama on one GPU.</li>
-    <li>Switching is one setting in the configuration, the provider, its key and the model.</li>
-    <li>The model only runs the conversation and chooses checks. The verdict comes from the trust report and its written profile, so changing the model doesn't change the rules. Today Claude runs Amito as a free agent, and the other models follow the scripted STOP&amp;SCAN route.</li>
+    <li>About 25 seconds.</li>
+    <li>Anyone can self-host AMITO and exchange or extend its parts. Any LLM with tool calling can be integrated, locally through Ollama or through a hosted API such as Anthropic's or OpenAI's. With a local model, images need not reach an LLM provider. Switching is one setting in the configuration.</li>
+    <li>New forensic models join the detection service behind a shared interface. The agent orchestrates new tools and API connections like the existing checks, and an organisation can write its own trust profile.</li>
+    <li>Because the rules and not the LLM weigh the evidence, the LLM can be exchanged without changing the verdict.</li>
   </ul></aside>
 </section>
